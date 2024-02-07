@@ -1,0 +1,84 @@
+
+.projetos {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.projetos h1 {
+    text-align: center;
+    font-size: 55px;
+    color: #FFFCE1;
+    animation: animate .50s forwards;
+}
+
+.projetos span {
+    display: block;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: #1A1A1A;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: 0;
+    animation: animate .80s forwards;
+}
+
+.projetos p {
+    text-align: center;
+    font-size: 18px;
+    color: #5C5C5C;
+    margin: 0;
+    animation: animate .90s forwards;
+}
+
+.conteiner-project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, auto));
+    justify-content: center;
+    gap: 30px 0px;
+    align-items: center;
+    align-content: center;
+    margin: 50px 0px;
+    box-sizing: border-box;
+}
+
+.img-pro {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.cc-project {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+    margin: 0 15px;
+    box-sizing: border-box;
+    animation: animate .50s forwards;
+}
+
+.cc-project h2 {
+    text-align: center;
+    color: #FFFCE1;
+}
+
+
+@media (max-width:480px) {
+    .projetos h1 {
+        font-size: 33px;
+    }
+    .projetos span {
+        font-size: 40px;
+    }
+    .projetos p {
+        font-size: 14px;
+    }
+    .cc-project {
+        margin: 0px 50px;
+       
+    }
+}

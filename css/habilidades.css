@@ -1,0 +1,144 @@
+
+.habilidades {
+    position: relative;
+    margin-top: 20px;
+}
+
+.habilidades h1 {
+    text-align: center;
+    font-size: 55px;
+    color: #FFFCE1;
+    margin: 0px;
+    animation: animate .50s forwards;
+}
+
+.span-habilidades {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    color: #1A1A1A;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    animation: animate .80s forwards;
+}
+
+.habilidades p {
+    text-align: center;
+    font-size: 18px;
+    color: #5C5C5C;
+    margin-top: 20px;
+    animation: animate .90s forwards;
+}
+
+.conteiner-habilades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.skrills-1 {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.skrills-2 {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.intro-skrills {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.intro-skrills span {
+    display: block;
+    font-size: 20px;
+    color: #FFFCE1;
+}
+
+.intro-skrills h2 {
+    color: #FFFCE1;
+    margin-bottom: 0px;
+}
+
+.barra-progress {
+    display: block;
+    background-color: #1A1A1A;
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.progress {
+    display: block;
+    background-color: #FFBD39;
+    padding: 6px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    animation: progres .90s linear;
+}
+
+@keyframes progres {
+    0% {
+        width: 0%;
+    }
+    10% {
+        width: 10%;
+    }
+    20% {
+        width: 20%;
+    }
+    30% {
+        width: 30%;
+    }
+    40% {
+        width: 40%;
+    }
+    50% {
+        width: 50%;
+    }
+    60% {
+        width: 60%;
+    }
+    70% {
+        width: 70%;
+    }
+    80% {
+        width: 85%;
+    }
+}
+
+
+@media (max-width:480px) {
+    .habilidades h1 {
+        font-size: 33px;
+    }
+    .span-habilidades {
+        font-size: 40px;
+    }
+    .habilidades p {
+        font-size: 16px;
+    }
+    .conteiner-habilades {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+    .habilidades h1 {
+        font-size: 33px;
+    }
+    .span-habilidades {
+        font-size: 40px;
+    }
+}

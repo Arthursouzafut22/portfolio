@@ -1,0 +1,126 @@
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.conteiner-intro {
+    max-width: 100%;
+    width: 500px;
+    padding: 20px;
+}
+
+.conteiner-intro span {
+    display: block;
+    color: #FFBD39;
+}
+
+.conteiner-intro h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    color: #FFFCE1;
+    margin: 0;
+    animation: animate .60s forwards;
+}
+
+.span-intro {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    animation: animate .50s forwards;
+}
+
+.conteiner-btns {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.conteiner-btns :nth-child(1) {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    margin-right: 7px;
+    background-color: #FFBD39;
+    padding: 15px 20px;
+    border-radius: 15px;
+    animation: animate .90s forwards;
+    font-weight: 600;
+}
+
+.conteiner-btns :nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: #FFFCE1;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 1px solid  #FFFCE1;
+    animation: animate .90s forwards;
+}
+.boneco {
+    max-width: 100%;
+}
+
+
+@media (max-width:480px) {
+
+    .span-intro {
+        font-size: 18px;
+    }
+
+    .conteiner-intro h1 {
+        font-size: 30px;
+    }
+
+    .conteiner-btns :nth-child(1) {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .conteiner-btns :nth-child(2) {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width:481px) and (max-width:991px) {
+    .span-intro {
+        font-size: 18px;
+    }
+
+    .conteiner-intro {
+        margin: 15px auto 0px auto;
+        text-align: center;
+    }
+    .conteiner-intro h1 {
+        font-size: 30px;
+    }
+    .conteiner-btns {
+        margin: 12px auto;
+        width: 300px;
+        
+    }
+
+    .conteiner-btns :nth-child(1) {
+        padding: 10px 15px;
+        font-size: 14px;
+        
+    }
+    .conteiner-btns :nth-child(2) {
+        padding: 10px 15px;
+        font-size: 14px;
+        
+    }
+
+    .boneco {
+        margin: 0 auto;
+    }
+}
